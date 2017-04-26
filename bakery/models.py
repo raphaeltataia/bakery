@@ -6,7 +6,7 @@ from django.utils import timezone
 class Recipe(models.Model):
     chief = models.ForeignKey('Chief')
     title = models.CharField(max_length=200)
-    ingredients = models.CharField(max_length=150)
+    category = models.CharField(max_length=15, blank=True)
     way = models.TextField()
     created_date = models.DateTimeField(
             default=timezone.now)

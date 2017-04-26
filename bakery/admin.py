@@ -6,7 +6,7 @@ from .models import Chief
 # developed by @raphaeltataia
 
 class RecipeAdmin(admin.ModelAdmin):
-	list_display = ('chief', 'title', 'ingredients', 'way', 'created_date', 'published_date', 'people_served')
+	list_display = ('chief', 'title', 'category', 'way', 'created_date', 'published_date', 'people_served')
 
 class ChiefAdmin(admin.ModelAdmin):
 	list_display = ('cpf', 'name', 'city', 'state', 'email')
