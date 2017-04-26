@@ -4,5 +4,5 @@ from django.http import HttpResponse
 
 # developed by @raphaeltataia
 
-def index(request):
-	return HttpResponse("What's up?!")
+def post_list(request):
+    return render(request, 'bakery/post_list.html', {})
